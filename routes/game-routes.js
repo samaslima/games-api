@@ -5,7 +5,7 @@ const gameController = require('./../controllers/game-controller');
 
 router.post('/', gameController.createGame);
 router.get('/:id', gameController.findById);
-router.get('/', gameController.findAllGames);
+router.get('/', gameController.findAll);
 router.delete('/:id', gameController.deleteGame);
 router.put('/:id', gameController.updateGame);
 
