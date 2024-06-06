@@ -3,6 +3,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const gameModel = require('./models/game');
+const playerModel = require('./models/player');
+
 const routerGame = require('./routes/game-routes');
 
 app.use(express.json());
