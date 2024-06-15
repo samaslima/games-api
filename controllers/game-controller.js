@@ -17,7 +17,7 @@ const findAll = async (req, res) => {
 
 const deleteGame = async (req, res) => {
     await gameModel.destroy({ where: { id: req.params.id }});
-    return res.status(200).json({ msg: `game with id ${ req.params.id } deleted`});
+    return res.status(200).json(req.params.id);
 }
 
 const updateGame = async (req, res) => {

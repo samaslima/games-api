@@ -17,7 +17,7 @@ const findAll = async (req, res) => {
 
 const deletePlayer = async (req, res) => {
     await playerModel.destroy({ where: { id: req.params.id }});
-    return res.status(200).json({ msg: `player with id ${ req.params.id } deleted`});
+    return res.status(200).json(req.params.id);
 }
 
 const updatePlayer = async (req, res) => {
